@@ -1,184 +1,180 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forum OSIS Kabupaten Pekalongan</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXJVRJZV5M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MXJVRJZV5M');
-</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Forum OSIS Kab. Pekalongan — Home</title>
+  <meta name="description" content="Forum OSIS Kabupaten Pekalongan — info, kegiatan, dan interaksi." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Logo Forum OSIS Pekalongan">
-                <h1>Forum OSIS<span>Kab. Pekalongan</span></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#"><i class="fas fa-home"></i> Beranda</a></li>
-                    <li><a href="#"><i class="fas fa-calendar"></i> Kegiatan</a></li>
-                    <li><a href="#"><i class="fas fa-info-circle"></i> Tentang</a></li>
-                    <li><a href="#"><i class="fas fa-robot"></i> RoboFokap</a></li>
-                </ul>
-            </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/img/logo.png" alt="logo" class="logo">
+        <div class="brand-text">
+          <h1>Forum OSIS</h1>
+          <small>Kab. Pekalongan</small>
         </div>
-    </header>
+      </div>
 
-    <!-- Hero Section -->
+      <div class="controls">
+        <button id="darkToggle" aria-pressed="false" class="btn icon-btn" title="Toggle mode">
+          <span class="moon">🌙</span><span class="sun">☀️</span>
+        </button>
+
+        <button id="hamburger" class="btn icon-btn hamburger" aria-label="menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav id="navMenu" class="nav">
+      <div class="container nav-inner">
+        <a href="#home">Home</a>
+        <a href="#kegiatan">Kegiatan</a>
+        <a href="#robofokap">RoboFokap</a>
+        <a href="#kuis">Kuis</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- HERO -->
     <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h2>P e n g e r t i a n : . . .</h2>
-                    <h1>Forum OSIS Kabupaten Pekalongan</h1>
-                    <p>Wadah kreatif siswa untuk berbagi ide dan mengembangkan potensi bersama</p>
-                    <a href="#" class="btn">Jelajahi Sekarang <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="hero-image">
-                    <img src="hero.png" alt="RoboFokap" class="robofokap-character">
-                </div>
+      <div class="container hero-inner">
+        <div class="hero-card">
+          <div class="hero-top">
+            <div class="stats">
+              <span class="chip">45 anggota</span>
+              <span class="chip">30+ sekolah</span>
+              <span class="chip">25+ proker</span>
+              <span class="chip">10+ angg fok</span>
             </div>
+            <h2 class="hero-title">Forum OSIS Kabupaten Pekalongan</h2>
+          </div>
+
+          <p class="lead">Publikasi jurnalistik, informasi kegiatan, dan dokumentasi organisasi — untuk siswa SMA Kab. Pekalongan.</p>
+
+          <div class="vm">
+            <div>
+              <h4>Visi :</h4>
+              <p>Menguatkan peran organisasi siswa melalui kolaborasi dan informasi yang relevan.</p>
+            </div>
+            <div>
+              <h4>Misi :</h4>
+              <p>Menyebarkan informasi, mendokumentasikan kegiatan, dan mengedukasi anggota.</p>
+            </div>
+          </div>
         </div>
+
+        <div class="hero-visual">
+          <img src="assets/img/hero.png" alt="hero cover" />
+        </div>
+      </div>
     </section>
 
-    <!-- RoboFokap Section -->
-    <section class="robofokap">
-        <div class="container">
-            <div class="section-header">
-                <h2>RoboFokap</h2>
-                <div class="robot-icon">
-                    <i class="fas fa-robot"></i>
-                </div>
-            </div>
-            <div class="robofokap-content">
-                <div class="robofokap-text">
-                    <p>Ayyo berinteraksi dan bertanya tanya tentang forum osis kabupaten Pekalongan dengan ai robofokap</p>
-                    <div class="interaction">
-                        <div class="chat-bubble">
-                            <p>Hai! Ada yang bisa RoboFokap bantu?</p>
-                        </div>
-                        <a href="#" class="btn">Klik Disini <i class="fas fa-comment"></i></a>
-                    </div>
-                </div>
-                <div class="robofokap-image">
-                    <img src="hero.png" alt="RoboFokap" class="floating">
-                </div>
-            </div>
-        </div>
+    <!-- PENGERTIAN -->
+    <section class="section simple" id="pengertian">
+      <div class="container">
+        <h3>Pengertian</h3>
+        <p class="muted">Forum OSIS adalah wadah komunikasi antar OSIS se-Kabupaten untuk berbagi program, pengalaman, dan publikasi.</p>
+      </div>
     </section>
 
-    <!-- Activities Section -->
-    <section class="activities">
-        <div class="container">
-            <div class="section-header">
-                <h2>Kegiatan Terbaru</h2>
-                <a href="#" class="btn-more">Show More <i class="fas fa-chevron-right"></i></a>
-            </div>
-            
-            <div class="activities-grid">
-                <div class="activity-card">
-                    <div class="card-header">
-                        <div class="date-badge">
-                            <span class="day">15</span>
-                            <span class="month">Sep</span>
-                        </div>
-                        <h3>Lomba Podcast Pelajar</h3>
-                    </div>
-                    <div class="card-body">
-                        <p>Ceritakan kisah inspiratif tentang sekolah dan lingkunganmu dalam format podcast kreatif</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 70%"></div>
-                            <div class="progress-label">70% kuota terisi</div>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="#" class="btn">Daftar Sekarang</a>
-                    </div>
-                </div>
-                
-                <!-- Tambahkan 2 card kegiatan lainnya di sini -->
-            </div>
+    <!-- ROBOFOKAP -->
+    <section class="section card-section" id="robofokap">
+      <div class="container">
+        <div class="section-head">
+          <h3>RoboFokap</h3>
+          <p class="muted">Ayo berinteraksi dan tanya tentang Forum OSIS Kab. Pekalongan dengan AI RoboFokap.</p>
         </div>
+
+        <div class="robo-wrap">
+          <div class="robo-left">
+            <img src="assets/img/robot.png" alt="RoboFokap" class="robot-illu">
+          </div>
+
+          <div class="robo-chat">
+            <div id="chatWindow" class="chat-window" aria-live="polite">
+              <div class="bot-message">Halo! Aku RoboFokap. Mau tanya tentang kegiatan atau cara gabung?</div>
+            </div>
+
+            <form id="chatForm" class="chat-form" autocomplete="off">
+              <label for="chatInput" class="sr-only">Tanya RoboFokap</label>
+              <input id="chatInput" name="message" type="text" placeholder="Tulis pertanyaanmu... contoh: bagaimana cara gabung?" required>
+              <button type="submit" class="btn primary">Kirim</button>
+            </form>
+            <p class="hint">Jawaban biasanya singkat. Jika butuh kontak admin, ketik "kontak".</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Quiz Section -->
-    <section class="quiz">
-        <div class="container">
-            <div class="quiz-content">
-                <div class="quiz-text">
-                    <h2>KUIS INTERAKTIF</h2>
-                    <p>Tebak-tebakan seputar OSIS Kabupaten Pekalongan</p>
-                    <a href="pages/kuis.html" class="btn">K U I Z DISINI <i class="fas fa-play"></i></a>
-                </div>
-                <div class="quiz-image">
-                    <img src="assets/img/quiz-icon.png" alt="Kuis Interaktif">
-                </div>
-            </div>
+    <!-- KEGIATAN TERBARU -->
+    <section class="section" id="kegiatan">
+      <div class="container">
+        <div class="section-head">
+          <h3>Kegiatan Terbaru</h3>
+          <button id="showMore" class="btn pill">Show more ..</button>
         </div>
+
+        <div id="cardsGrid" class="cards-grid">
+          <!-- cards akan diisi via JS/HTML -->
+        </div>
+      </div>
     </section>
 
-    <!-- Fokap Activities -->
-    <section class="fokap-activities">
-        <div class="container">
-            <h2>AKTIVITAS FOKAP SERU LAINNYA</h2>
-            <div class="fokap-grid">
-                <div class="fokap-card">
-                    <div class="icon">
-                        <i class="fas fa-newspaper"></i>
-                    </div>
-                    <h3>FOKAP JURNALISTIK</h3>
-                    <p>Kembangkan bakat menulismu bersama tim jurnalistik</p>
-                </div>
-                
-                <div class="fokap-card">
-                    <div class="icon">
-                        <i class="fas fa-podcast"></i>
-                    </div>
-                    <h3>FOKAP PODCASTS (Cakap)</h3>
-                    <p>Bersuara dan berbagi cerita melalui podcast</p>
-                </div>
-            </div>
+    <!-- KUIS -->
+    <section class="section highlight" id="kuis">
+      <div class="container kuis-grid">
+        <div>
+          <h3>Kuis Interaktif</h3>
+          <p class="muted">Tebak-tebakan seputar OSIS — uji wawasanmu!</p>
+          <a href="#kuismodal" class="btn big" id="kuisBtn">KUIZ DISINI</a>
         </div>
+
+        <div class="activity-links">
+          <a class="pill pink" href="#">Aktivitas FOKAP Seru Lainnya</a>
+          <div class="rounds">
+            <a class="round" href="#">Fokap Jurnalistik</a>
+            <a class="round" href="#">Fokap Podcasts</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="contact-info">
-                    <h3>Hubungi Kami</h3>
-                    <ul>
-                        <li><i class="fab fa-instagram"></i> @forumosispekalongan</li>
-                        <li><i class="fab fa-youtube"></i> Forum OSIS Pekalongan</li>
-                        <li><i class="fas fa-envelope"></i> info@forumosispekalongan.id</li>
-                        <li><i class="fas fa-phone"></i> 0812-3456-7890 (Admin)</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-logo">
-                    <img src="logo.png" alt="Logo Forum OSIS">
-                    <p>Divisi Informasi & Komunikasi<br>OSIS Kab. Pekalongan</p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2023 Forum OSIS Kabupaten Pekalongan. Hak Cipta Dilindungi.</p>
-            </div>
+    <!-- FOOTER / KONTAK -->
+    <footer id="kontak" class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <h4>More info</h4>
+          <p class="muted">Instagram · Youtube · Link · Email · Kontak person</p>
         </div>
+        <div class="social">
+          <a href="#" aria-label="instagram">IG</a>
+          <a href="#" aria-label="youtube">YT</a>
+          <a href="#" aria-label="email">Email</a>
+        </div>
+      </div>
+      <p class="copyright">© <span id="year"></span> Forum OSIS Kab. Pekalongan</p>
     </footer>
+  </main>
 
-    <script src="assets/js/main.js"></script>
+  <!-- KUIS MODAL (simple) -->
+  <div id="kuismodal" class="modal" aria-hidden="true">
+    <div class="modal-inner">
+      <button id="closeKuis" class="btn close">✕</button>
+      <h3>Kuis OSIS - Pilih Jawaban</h3>
+      <div id="quizArea" class="quiz-area">
+        <!-- quiz injected by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
